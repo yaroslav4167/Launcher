@@ -13,7 +13,7 @@
 
 <!-- DrLeonardo Design -->
 
-<Pane fx:id="overlay" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.20" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="overlay" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1">
    <children>
      <Pane id="holder" layoutX="1.0" layoutY="28.0" prefHeight="371.0" prefWidth="598.0">
        <children>
@@ -47,6 +47,17 @@
 		 
          <Button fx:id="apply" defaultButton="true" layoutX="486.0" layoutY="335.0" prefHeight="23.0" prefWidth="100.0" text="Применить" />
 			<Text layoutX="17.0" layoutY="19.0">Выделение памяти: </Text>
+            <Pane fx:id="transferDialog" prefHeight="371.0" prefWidth="598.0">
+               <children>
+                  <Text fill="WHITE" layoutX="99.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Перенести все данные в новую директорию?" wrappingWidth="400.13671875">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="applyTransfer" layoutX="125.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Да, переместить!" />
+                  <Button fx:id="cancelTransfer" layoutX="340.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Нет, не нужно." />
+               </children>
+            </Pane>
 
        </children>
      </Pane>
